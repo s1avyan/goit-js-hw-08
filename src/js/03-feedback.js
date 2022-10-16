@@ -35,6 +35,9 @@ function loadData() {
 function handleFormSubmit(e) {
   e.preventDefault();
 
+  console.log(formData);
+
   localStorage.removeItem(DATA_FROM_STORAGE);
+
   e.target.reset();
 }
